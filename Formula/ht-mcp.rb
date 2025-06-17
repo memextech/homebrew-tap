@@ -6,14 +6,14 @@ class HtMcp < Formula
   if OS.mac?
     if Hardware::CPU.arm?
       url "https://github.com/memextech/ht-mcp/releases/download/v#{version}/ht-mcp-aarch64-apple-darwin"
-      sha256 "YOUR_ARM64_SHA256_HERE"
+      sha256 "e93caabb94dcba7e1f9690d07347805917bf45191e7e8ced74c03f7ac4340cc7"
     else
       url "https://github.com/memextech/ht-mcp/releases/download/v#{version}/ht-mcp-x86_64-apple-darwin"
-      sha256 "YOUR_X86_64_SHA256_HERE"
+      sha256 "19ab44223a550dca3a18faaf877db46768dd8eb43f91f41472bd4300fbc1e853"
     end
   else
     url "https://github.com/memextech/ht-mcp/releases/download/v#{version}/ht-mcp-x86_64-unknown-linux-gnu"
-    sha256 "YOUR_LINUX_SHA256_HERE"
+    sha256 "047bb4e578bdb67ffa8f49bf684414ca3993ffe780305f560e23352958b20b4c"
   end
 
   def install
