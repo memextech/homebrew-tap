@@ -1,19 +1,19 @@
 class HtMcp < Formula
   desc "Headless Terminal MCP Server - Control terminal sessions via Model Context Protocol"
   homepage "https://github.com/memextech/ht-mcp"
-  version "0.1.2"
+  version "0.1.3"
 
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/memextech/ht-mcp/releases/download/v0.1.2/ht-mcp-aarch64-apple-darwin"
-      sha256 "7cc10ed40104be9d3d098869c307aeef0cd2c838bb0a9fca5653fbecdfb92672"
+      url "https://github.com/memextech/ht-mcp/releases/download/v0.1.3/ht-mcp-aarch64-apple-darwin"
+      sha256 "dba2d2619c01f4c8565402e64a971b1bd7acb171148e06fb6ae80bb018dc3de3"
     else
-      url "https://github.com/memextech/ht-mcp/releases/download/v0.1.2/ht-mcp-x86_64-apple-darwin"
-      sha256 "fb3d3cd8ba81818349c939f7303250824bc5039390ce473a8d14c1876f5408b3"
+      url "https://github.com/memextech/ht-mcp/releases/download/v0.1.3/ht-mcp-x86_64-apple-darwin"
+      sha256 "9d169deff1097a0306b1c4f53b0e51502e1c5aebcca9fb9e2601ae1604cbfcd6"
     end
   else
-    url "https://github.com/memextech/ht-mcp/releases/download/v0.1.2/ht-mcp-x86_64-unknown-linux-gnu"
-    sha256 "b7c287980cc01d1c0b4ff8b2450f9bdedda3624ccdff533d22661785b64d1424"
+    url "https://github.com/memextech/ht-mcp/releases/download/v0.1.3/ht-mcp-x86_64-unknown-linux-gnu"
+    sha256 "c5c1cb011bc925c8ce6538308af6f0615bd83b34e3258f4105d954675936cd26"
   end
 
   def install
